@@ -66,6 +66,8 @@ const DEFAULT_STYLE_ORDER = [BOLD, ITALIC, UNDERLINE, STRIKETHROUGH, CODE];
 const ENTITY_ATTR_MAP: {[entityType: string]: AttrMap} = {
   [ENTITY_TYPE.LINK]: {url: 'href', rel: 'rel', target: 'target', title: 'title', className: 'class'},
   [ENTITY_TYPE.IMAGE]: {src: 'src', height: 'height', width: 'width', alt: 'alt', className: 'class'},
+  [ENTITY_TYPE.VIDEO]: {src: 'src', height: 'height', width: 'width', alt: 'alt', className: 'class'},
+  [ENTITY_TYPE.AUDIO]: {src: 'src', alt: 'alt', className: 'class'},
 };
 
 // Map entity data to element attributes.
